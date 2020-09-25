@@ -1,6 +1,6 @@
 # Bienvenido al repositorio
 **Octree**
-Estructura de datos cuenta con Estructura Arbol Nodo y Punto
+Estructura de datos que cuenta con las clases Árbol Nodo y Punto
 #Instalación
 ```bash
 cmake .
