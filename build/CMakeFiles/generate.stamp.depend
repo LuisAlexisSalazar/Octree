@@ -1,9 +1,4 @@
 # CMake generation dependency list for this directory.
-C:/Users/Admin/Desktop/Nueva carpeta/CMakeLists.txt
-C:/Users/Admin/Desktop/Nueva carpeta/build/CMakeFiles/3.18.2/CMakeCCompiler.cmake
-C:/Users/Admin/Desktop/Nueva carpeta/build/CMakeFiles/3.18.2/CMakeCXXCompiler.cmake
-C:/Users/Admin/Desktop/Nueva carpeta/build/CMakeFiles/3.18.2/CMakeRCCompiler.cmake
-C:/Users/Admin/Desktop/Nueva carpeta/build/CMakeFiles/3.18.2/CMakeSystem.cmake
 E:/CMake/share/cmake-3.18/Modules/CMakeCInformation.cmake
 E:/CMake/share/cmake-3.18/Modules/CMakeCXXInformation.cmake
 E:/CMake/share/cmake-3.18/Modules/CMakeCommonLanguageInclude.cmake
@@ -21,3 +16,8 @@ E:/CMake/share/cmake-3.18/Modules/Platform/Windows-MSVC-CXX.cmake
 E:/CMake/share/cmake-3.18/Modules/Platform/Windows-MSVC.cmake
 E:/CMake/share/cmake-3.18/Modules/Platform/Windows.cmake
 E:/CMake/share/cmake-3.18/Modules/Platform/WindowsPaths.cmake
+E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/CMakeLists.txt
+E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/CMakeFiles/3.18.2/CMakeCCompiler.cmake
+E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/CMakeFiles/3.18.2/CMakeCXXCompiler.cmake
+E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/CMakeFiles/3.18.2/CMakeRCCompiler.cmake
+E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/CMakeFiles/3.18.2/CMakeSystem.cmake

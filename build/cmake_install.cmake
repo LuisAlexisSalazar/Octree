@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Admin/Desktop/Nueva carpeta
+# Install script for directory: E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Admin/Desktop/Nueva carpeta/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

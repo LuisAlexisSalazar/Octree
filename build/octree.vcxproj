@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{ED3E976A-8339-3560-865D-99B8BF9AC657}</ProjectGuid>
+    <ProjectGuid>{36B96300-3E72-323F-83DF-B5C5F5F05935}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\Desktop\Nueva carpeta\build\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">octree.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">octree</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\Desktop\Nueva carpeta\build\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">octree.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">octree</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\Desktop\Nueva carpeta\build\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">octree.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">octree</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\Desktop\Nueva carpeta\build\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">octree.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">octree</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Admin\Desktop\Nueva carpeta\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -104,10 +104,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Admin\Desktop\Nueva carpeta\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Admin\Desktop\Nueva carpeta\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -120,8 +120,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Admin/Desktop/Nueva carpeta/build/Debug/octree.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Admin/Desktop/Nueva carpeta/build/Debug/octree.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/Debug/octree.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/Debug/octree.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -130,7 +130,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Admin\Desktop\Nueva carpeta\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -148,10 +148,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Admin\Desktop\Nueva carpeta\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Admin\Desktop\Nueva carpeta\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -164,8 +164,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Admin/Desktop/Nueva carpeta/build/Release/octree.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Admin/Desktop/Nueva carpeta/build/Release/octree.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/Release/octree.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/Release/octree.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -174,7 +174,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Admin\Desktop\Nueva carpeta\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -192,10 +192,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Admin\Desktop\Nueva carpeta\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Admin\Desktop\Nueva carpeta\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -208,8 +208,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Admin/Desktop/Nueva carpeta/build/MinSizeRel/octree.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Admin/Desktop/Nueva carpeta/build/MinSizeRel/octree.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/MinSizeRel/octree.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/MinSizeRel/octree.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -218,7 +218,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Admin\Desktop\Nueva carpeta\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -235,10 +235,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Admin\Desktop\Nueva carpeta\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Admin\Desktop\Nueva carpeta\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -251,8 +251,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Admin/Desktop/Nueva carpeta/build/RelWithDebInfo/octree.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Admin/Desktop/Nueva carpeta/build/RelWithDebInfo/octree.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/RelWithDebInfo/octree.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/RelWithDebInfo/octree.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -260,11 +260,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Admin\Desktop\Nueva carpeta\CMakeLists.txt">
+    <CustomBuild Include="E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\CMakeLists.txt">
       <StdOutEncoding>UTF-8</StdOutEncoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Admin/Desktop/Nueva carpeta/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-E:\CMake\bin\cmake.exe "-SC:/Users/Admin/Desktop/Nueva carpeta" "-BC:/Users/Admin/Desktop/Nueva carpeta/build" --check-stamp-file "C:/Users/Admin/Desktop/Nueva carpeta/build/CMakeFiles/generate.stamp"
+E:\CMake\bin\cmake.exe "-SE:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree" "-BE:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build" --check-stamp-file "E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -272,12 +272,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\3.18.2\CMakeSystem.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\3.18.2\CMakeCCompiler.cmake;E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\3.18.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Admin/Desktop/Nueva carpeta/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-E:\CMake\bin\cmake.exe "-SC:/Users/Admin/Desktop/Nueva carpeta" "-BC:/Users/Admin/Desktop/Nueva carpeta/build" --check-stamp-file "C:/Users/Admin/Desktop/Nueva carpeta/build/CMakeFiles/generate.stamp"
+E:\CMake\bin\cmake.exe "-SE:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree" "-BE:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build" --check-stamp-file "E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -285,12 +285,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\3.18.2\CMakeSystem.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\3.18.2\CMakeCCompiler.cmake;E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\3.18.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Admin/Desktop/Nueva carpeta/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-E:\CMake\bin\cmake.exe "-SC:/Users/Admin/Desktop/Nueva carpeta" "-BC:/Users/Admin/Desktop/Nueva carpeta/build" --check-stamp-file "C:/Users/Admin/Desktop/Nueva carpeta/build/CMakeFiles/generate.stamp"
+E:\CMake\bin\cmake.exe "-SE:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree" "-BE:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build" --check-stamp-file "E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -298,12 +298,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\3.18.2\CMakeSystem.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\3.18.2\CMakeCCompiler.cmake;E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\3.18.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Admin/Desktop/Nueva carpeta/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-E:\CMake\bin\cmake.exe "-SC:/Users/Admin/Desktop/Nueva carpeta" "-BC:/Users/Admin/Desktop/Nueva carpeta/build" --check-stamp-file "C:/Users/Admin/Desktop/Nueva carpeta/build/CMakeFiles/generate.stamp"
+E:\CMake\bin\cmake.exe "-SE:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree" "-BE:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build" --check-stamp-file "E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -311,17 +311,17 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\3.18.2\CMakeSystem.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\Desktop\Nueva carpeta\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;E:\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;E:\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;E:\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\3.18.2\CMakeCCompiler.cmake;E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\3.18.2\CMakeCXXCompiler.cmake;E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\3.18.2\CMakeRCCompiler.cmake;E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\3.18.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Admin\Desktop\Nueva carpeta\source\NuevoOctree.cpp" />
+    <ClCompile Include="E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\source\NuevoOctree.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Admin\Desktop\Nueva carpeta\build\ZERO_CHECK.vcxproj">
-      <Project>{E621F240-C598-3B0A-A05E-68F369B43BF1}</Project>
+    <ProjectReference Include="E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\build\ZERO_CHECK.vcxproj">
+      <Project>{EE7863BD-927D-37E4-A17C-4A0B686AD5BA}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

@@ -64,7 +64,7 @@ int main()
     for (int i = 0; i < PuntosOficiales.size(); i++)
         Octree.insert(PuntosOficiales[i].x,PuntosOficiales[i].y,PuntosOficiales[i].z);
     
-    //Ejemplo de Busqueda y eliminación
+    //Ejemplo de Busqueda y eliminaciï¿½n
     int x, y, z;
 
     x = 32362;

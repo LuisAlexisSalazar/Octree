@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Admin\Desktop\Nueva carpeta\source\NuevoOctree.cpp">
+    <ClCompile Include="E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\source\NuevoOctree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Admin\Desktop\Nueva carpeta\CMakeLists.txt" />
+    <CustomBuild Include="E:\U\Semestre 6°\Estructura de Datos Avanzada\Practico\Repositorios\Octree\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{42DC431F-AB9F-3F82-85F5-F8F4F14ADE3F}</UniqueIdentifier>
+      <UniqueIdentifier>{E05CD163-8990-3603-B2AC-C54D2F5938C6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
