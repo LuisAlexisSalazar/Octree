@@ -7,7 +7,7 @@ cmake .
 cmake --build .
 ```
 ## Necesario:
-Usar el ejemplo debemos copiar rabbit.obj en la carpeta build/debug
+Usar el ejemplo debemos copiar source/rabbit.obj en la carpeta build/debug/
 
 ## Ejecución
 ```bash
