@@ -6,6 +6,8 @@ Estructura de datos que cuenta con las clases Árbol, Nodo y Punto
 cmake .
 cmake --build .
 ```
+## Necesario:
+Usar el ejemplo debemos copiar rabbit.obj en la carpeta build/debug
 
 ## Ejecución
 ```bash
