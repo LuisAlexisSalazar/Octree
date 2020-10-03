@@ -1,56 +1,169 @@
 #pragma once
+
 #include"CNode.h"
+#include<stralign.h>
+#include <fstream>
+#include <string>
+#include<sstream>
+#include"Visualizador.h"
 
-template<typename T>
-class COctree
-{
+class COctree {
 public:
-	CNode<T>* Root;
+    vector<CPunto> conjuntoPuntos;
+    CNode* root = NULL;
+    double capacidadTotal;
 
 
-	COctree() {
-		Root = new CNode<T>();
-	}
+    COctree(double capacidad) {
+        ifstream dataFileXYZ;
+        ifstream ArchivoXYZ("rabbit.obj");
+        CPunto maxBound, minBound;
 
-	//Definir dominio total a mi root
-	COctree(T x1, T y1, T z1, T x2, T y2, T z2) {
-		Root = new CNode<T>(x1, y1, z1, x2, y2, z2);
-	}
+        if (ArchivoXYZ.fail())
+            cout << "No hay archivos de puntos" << endl;
 
-	
-	void insert(T x, T y, T z) {
-		if (findPunto(x, y, z))
-			cout << "No se aceptan repeticiones" << endl;
-		
-		else
-			Root->Insertar(x, y, z);
-	}
+        else {
+            string punto_string;
+            CPunto tmp;
+            int i = 0;
+            while (!ArchivoXYZ.eof()) {
+                getline(ArchivoXYZ, punto_string);
+                stringstream ss(punto_string);
+                ss >> tmp;
+                ActualizarMaximo(maxBound, tmp);
+                ActualizarMinimo(minBound, tmp);
+                //cout << tmp.x << " " << tmp.y << " " << tmp.z << endl;
+                //Poner los Puntos a la raiz
+                conjuntoPuntos.push_back(tmp);
+                ++i;
+            }
+            ArchivoXYZ.close();
 
+            CPunto p111 = CPunto(1, 1, 1);
+            minBound = minBound - p111;
+            maxBound = maxBound + p111;
+            root = new CNode(int(conjuntoPuntos.size()), minBound, maxBound - minBound);
+            capacidadTotal = capacidad;
+            //Construcción del Árbol
+            BuildTree();
+        }
+    }
+          
+   
+    bool insert(CPunto a_point) {
+        CNode** poct;
+        int pind = 0;
+        if (!find(a_point, poct, pind)) {
+            while (!(*poct)->isInStopCriterion(capacidadTotal)) {
+                split(poct);
+                for (auto& child : (*poct)->hijos) {
+                    if (child->isInside(a_point)) {
+                        poct = &child;
+                        break;
+                    }
+                }
+            }
+            (*poct)->content.push_back(new CPunto(a_point.x, a_point.y, a_point.z));
+            if ((*poct)->color != BLACK) {
+                (*poct)->color = BLACK;
+                poct = &(*poct)->parent;
+                recall(*poct);
+            }
+            return true;
+        }
+        return false;
+    }
 
-	bool findPunto(T x, T y, T z) {
-		CPunto<T>* PuntoBuscar;
-		CNode<T>* NodoBuscar;
-		return Root->Find(x, y, z, PuntoBuscar, NodoBuscar);
-	}
+    void prepararOpenGL() {
+        CNode* reader = root;
+        read(reader);
+    }
 
-	void remove(T x, T y, T z) {
-		Root->Eliminar(x, y, z);
-	}
-	
-	void printPunto(T x, T y, T z) {
-		CPunto<T>* Punto = NULL;
-		if (findPunto(x, y, z, Punto))
-			cout << Punto->x << "-" << Punto->y << "-" << Punto->z << endl;
-		else
-			cout << "No existe el punto" << endl;
-	}
+    void BuildTree() {
+        for (auto& point : conjuntoPuntos) {
+            insert(point);
+        }
+    }
 
-	
-	bool isNodoNulo(CNode<T>* a) {
-		if (a->Punto->x == -1 && a->Punto->y == -1 && a->Punto->z == -1)
-			return true;
-		return false;
-	}
+    bool find(CPunto a_point, CNode**& poct, int& pind) {
+        poct = &root;
+        if (*poct && !(*poct)->isInside(a_point)) return false;
+        while ((*poct)->color == GRAY) {
+            for (auto& child : (*poct)->hijos){
+                if (child && child->isInside(a_point)) {
+                    poct = &child;
+                    break;
+                }
+            }
+        }
+        if ((*poct)->color == BLACK) {
+            for (auto& p : (*poct)->content) {
+                if (*p == a_point)
+                    return true;
+                ++pind;
+            }
+        }
+        return false;
+    }
+    
+    void split(CNode**& poct) {
+        (*poct)->color = GRAY;
+        int childVolume = (*poct)->volume / 8, i = 0;
+        
+        //perimetro,size,padre
+        CPunto X = CPunto((*poct)->chSize.x, 0, 0);
+        CPunto Y = CPunto(0 ,(*poct)->chSize.y, 0);
+        CPunto Z = CPunto(0, 0, (*poct)->chSize.z);
 
+        (*poct)->hijos[0] = new CNode(childVolume,(*poct)->boundfp, X + Y + Z, (*poct));
+        (*poct)->hijos[1] = new CNode(childVolume,(*poct)->boundfp + Y, X + Y + Z, (*poct));
+        (*poct)->hijos[2] = new CNode(childVolume,(*poct)->boundfp + Z, X + Y + Z, (*poct));
+        (*poct)->hijos[3] = new CNode(childVolume,(*poct)->boundfp + Y + Z, X + Y + Z, (*poct));
+        (*poct)->hijos[4] = new CNode(childVolume,(*poct)->boundfp + X, X + Y + Z, (*poct));
+        (*poct)->hijos[5] = new CNode(childVolume,(*poct)->boundfp + X + Y, X + Y + Z, (*poct));
+        (*poct)->hijos[6] = new CNode(childVolume,(*poct)->boundfp + X + Z, X + Y + Z, (*poct));
+        (*poct)->hijos[7] = new CNode(childVolume,(*poct)->boundfp + X + Y + Z, X + Y + Z, (*poct));
+    }
+
+    void recall(CNode* parnt, COLOR status = BLACK) {
+        while (parnt) {
+         
+            for (auto& child : parnt->hijos) if (child->color != status) return;
+
+            for (auto& child : parnt->hijos) {
+                parnt->content.insert(parnt->content.end(), child->content.begin(), child->content.end());
+                child->content.clear();
+                delete child;
+                child = NULL;
+            }
+            parnt->color = status;
+            parnt = parnt->parent;
+        }
+    }
+    void read(CNode* reader) {
+        if (reader->color == BLACK) {
+            DrawableOctant oct(reader->boundfp, reader->boundsp);
+            octants.push_back(oct);
+            return;
+        }
+
+        for (auto& child : reader->hijos) {
+            if (child && child->color == GRAY) {
+                DrawableOctant oct(reader->boundfp, reader->boundsp);
+                octants.push_back(oct);
+                read(child);
+            }
+        }
+    }
+
+    void ActualizarMaximo(CPunto& M, CPunto& X) {
+        M.x = (M.x < X.x) ? X.x : M.x;
+        M.y = (M.y < X.y) ? X.y : M.y;
+        M.z = (M.z < X.z) ? X.z : M.z;
+    }
+    void ActualizarMinimo(CPunto& M, CPunto& X) {
+        M.x = (M.x > X.x) ? X.x : M.x;
+        M.y = (M.y > X.y) ? X.y : M.y;
+        M.z = (M.z > X.z) ? X.z : M.z;
+    }
 };
-

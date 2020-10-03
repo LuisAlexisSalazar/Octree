@@ -1,38 +1,58 @@
 #pragma once
-#include<iostream>
 
+#include<iostream>
 using namespace std;
 
-template<typename T>
-class CPunto
-{
+class CPunto {
 public:
-	T x;
-	T y;
-	T z;
+    double x, y, z;
+    CPunto() {
+        x = 0.0;
+        y = 0.0;
+        z = 0.0;
+    }
 
+    CPunto(double x, double y, double z) {
+        this->x = x;
+        this->y = y;
+        this->z = z;
+    }
 
-	CPunto() {
-		this->x = -1;
-		this->y = -1;
-		this->z = -1;
-	}
+    friend istream& operator>>(istream& is, CPunto& punto) {
+        is >> punto.x >> punto.y >> punto.z;
+        return is;
+    }
 
+    bool operator==(CPunto& p) {
+        return x == p.x && y == p.y && z == p.z;
+    }
 
-	CPunto(T x, T y, T z) {
-		this->x = x;
-		this->y = y;
-		this->z = z;
-	}
+    CPunto operator+(CPunto& p2) {
+        CPunto p;
+        p.x = x + p2.x; p.y = y + p2.y; p.z = z + p2.z;
+        return p;
+    }
 
+    CPunto operator-(CPunto& p2) {
+        CPunto p;
+        p.x = x - p2.x; p.y = y - p2.y; p.z = z - p2.z;
+        return p;
+    }
 
-	
+    CPunto operator*(CPunto& p2) {
+        CPunto p;
+        p.x = x * p2.x; p.y = y * p2.y; p.z = z * p2.z;
+        return p;
+    }
 
-	friend istream& operator>>(istream& is, CPunto<T>& punto) {
-		is >> punto.x >> punto.y >> punto.z;
-		return is;
-	}
-	
+    CPunto& operator=(const CPunto& p) {
+        this->x = p.x; this->y = p.y; this->z = p.z;
+        return *this;
+    }
 
+    void print() {
+        cout << '<' << x << ',' << y << ',' << z << '>' << endl;
+    }
+
+   
 };
-

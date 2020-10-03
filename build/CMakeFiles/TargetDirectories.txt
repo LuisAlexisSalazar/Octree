@@ -1,3 +1,0 @@
-E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/CMakeFiles/octree.dir
-E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/CMakeFiles/ALL_BUILD.dir
-E:/U/Semestre 6°/Estructura de Datos Avanzada/Practico/Repositorios/Octree/build/CMakeFiles/ZERO_CHECK.dir
